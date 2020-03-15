@@ -11,7 +11,7 @@ csv_read = open('questionbank.csv')
 csv_reader = csv.reader(csv_read, delimiter=',')
 row = random.choice(list(csv_reader)[1:])
 
-# ToDo: Store URL somewhere safe.
+# Use API token for Slack Bot that I created.
 URL = os.environ.get('SLACK_TOKEN')
 
 # Message
